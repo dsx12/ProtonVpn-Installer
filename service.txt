@@ -1,0 +1,13 @@
+[Unit]
+Description=ProtonVPN
+After=syslog.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/protonvpn c -f
+ExecStop=/usr/bin/pvpn d
+ExecReload=/usr/local/bin/protonvpn c -f
+
+[Install]
+WantedBy=multi-user.target
