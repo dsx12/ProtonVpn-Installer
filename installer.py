@@ -2,7 +2,7 @@ import os
 
 if __name__ == '__main__':
 	if os.getuid() != 0:
-		print('you have to run this script as sudo')
+		print('you have to run this script with sudo')
 		exit(1)
 
 	try:
