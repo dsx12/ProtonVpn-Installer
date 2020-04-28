@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=forking
 ExecStart=/usr/local/bin/protonvpn c -f
-ExecStop=/usr/bin/pvpn d
+ExecStop=/usr/local/bin/protonvpn d
 ExecReload=/usr/local/bin/protonvpn c -f
 
 [Install]
