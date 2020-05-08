@@ -9,3 +9,11 @@ Edit the service.txt file to match your path to protonvpn binary!
 `cd ProtonVpn-Installer`
 
 `sudo python3 install.py`
+
+To run:
+
+`sudo service protonvpn start`
+
+Alternatively:
+
+`sudo systemctl start protonvpn.service`
